@@ -25,11 +25,20 @@
           email:   <input type="text" class="input" name="email"><br>
         </div>
         <div class="row">
-          password: <input type="text" class="input" name="password"><br>
+          password: <input type="text" class="input" name="password1"><br>
         </div>
         <div class="row">
-          confirm password: <input type="text" class="input" name="password"><br>
+          confirm password: <input type="text" class="input" name="password2"><br>
         </div>
+        <button type="submit" class="">Register</button>
+        </div>
+         <div class="row">
+         <p>Already have an account? <a href="#">Sign in</a>.</p>
       </form>
+    <div>
+      {% for message in messages %}
+         <h2>   {{ message }}</h2>
+      {% endfor %}      
+    </div>  
 </body>
 </html>
